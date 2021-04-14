@@ -10,3 +10,4 @@ RUN add-apt-repository ppa:redislabs/redis
 RUN apt update
 RUN apt install redis -y
 COPY ./kubectl /usr/bin/
+COPY ./helm /usr/bin/
