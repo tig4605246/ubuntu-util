@@ -9,5 +9,7 @@ RUN apt install -y software-properties-common dirmngr apt-transport-https lsb-re
 RUN add-apt-repository ppa:redislabs/redis
 RUN apt update
 RUN apt install redis -y
+RUN apt install tmux -y
+RUN apt install iputils-ping -y
 COPY ./kubectl /usr/bin/
 COPY ./helm /usr/bin/
