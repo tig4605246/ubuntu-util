@@ -8,8 +8,8 @@ RUN apt install -y mysql-client
 RUN apt install -y software-properties-common dirmngr apt-transport-https lsb-release ca-certificates
 RUN add-apt-repository ppa:redislabs/redis
 RUN apt update
-RUN apt install redis -y
-RUN apt install tmux -y
-RUN apt install iputils-ping -y
+RUN apt install -y redis 
+RUN apt install -y tmux 
+RUN apt install -y iputils-ping 
 COPY ./kubectl /usr/bin/
 COPY ./helm /usr/bin/
